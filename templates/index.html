@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+<p>This main page, method: {{ request.method }}</p>
+
+{% for item in data %}
+    <p>{{ item.name }}</p>
+{% endfor %}
